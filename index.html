@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                Agenda de contatos
+            </h1>
+        </header>
+        <form id="formulario">
+            <input id="nome" type="text" required placeholder="Nome completo">
+            <input id="telefone" type="tel" required placeholder="Telefone">
+            <button id="btn-submit" class="primary-button" type="submit"><img src="./images/add.svg" alt="Ícone de adição">Adicionar</button>
+        </form>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th><h2>Nome do contato</h2></th>
+                    <th><h2>Telefone</h2></th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCorpo">
+                <tr class="emptyText">
+                    <th><h2>Adicione novos contatos</h2></th>
+                </tr>
+                <tr class="emptyImage">
+                    <td><img src="./images/table-empty.png" alt="Ilustração-contato"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
